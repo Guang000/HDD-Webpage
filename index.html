@@ -316,8 +316,8 @@
             To address the computational and storage challenges posed by large-scale datasets in deep learning, dataset distillation has been proposed to synthesize a compact dataset that replaces the original while maintaining comparable model performance. Unlike optimization-based approaches that require costly bi-level optimization, distribution matching (DM) methods improve efficiency by aligning the distributions of synthetic and original data, thereby eliminating nested optimization. DM achieves high computational efficiency and has emerged as a promising solution. However, existing DM methods, constrained to Euclidean space, treat data as independent and identically distributed points, overlooking complex geometric and hierarchical relationships. To overcome this limitation, we propose a novel hyperbolic dataset distillation method, termed HDD. Hyperbolic space, characterized by negative curvature and exponential volume growth with distance, naturally models hierarchical and tree-like structures. HDD embeds features extracted by a shallow network into the Lorentz hyperbolic space, where the discrepancy between synthetic and original data is measured by the hyperbolic (geodesic) distance between their centroids. By optimizing this distance, the hierarchical structure is explicitly integrated into the distillation process, guiding synthetic samples to gravitate towards the root-centric regions of the original data distribution while preserving their underlying geometric characteristics. Furthermore, we find that pruning in hyperbolic space requires only 20% of the distilled core set to retain model performance, while significantly improving training stability. Notably, HDD is seamlessly compatible with most existing DM methods, and extensive experiments on different datasets validate its effectiveness.
           </p>
           <figure>
-            <img src="static/images/method.png" alt="HDD method overview">
-            <figcaption>Overview of HDD</figcaption>
+            <img src="static/images/method.jpg" alt="HDD method overview">
+            <figcaption>Framework of HDD.</figcaption>
           </figure>
         </div>
       </div>
@@ -337,21 +337,21 @@
         <img src="static/images/overview.jpg" alt="Overview" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Overview.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/visualization.jpg" alt="Visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Visualization.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/results.jpg" alt="Distilled data" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Distilled data.
        </h2>
     </div>
   </div>
